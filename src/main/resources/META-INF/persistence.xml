@@ -18,9 +18,10 @@
 		
 		<properties>
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/il-volo" />
-			<property name="hibernate.connection.username" value="postgres" />
-			<property name="hibernate.connection.password" value="postgres" />
+			<property name="hibernate.connection.url" value="${JDBC_DATABASE_URL}" />
+			<!-- property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/il-volo" /-->
+			<!-- property name="hibernate.connection.username" value="postgres" /-->
+			<!-- property name="hibernate.connection.password" value="postgres" /-->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.hbm2ddl.auto" value="update"/>
